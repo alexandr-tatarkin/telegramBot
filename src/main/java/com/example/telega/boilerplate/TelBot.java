@@ -33,7 +33,6 @@ public class TelBot extends TelegramLongPollingBot {
             else if (update.getMessage().hasSticker())
                 key = ContentType.STICKER.toString();
             TelBotMethodController controller = container.getController(key);
-            if (controller == null) controller = container.getController("");
             try {
                 execute(controller.process(update));
             } catch (TelegramApiException e) {

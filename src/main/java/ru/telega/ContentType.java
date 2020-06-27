@@ -1,4 +1,4 @@
-package com.example.telega.boilerplate;
+package ru.telega;
 
 public enum ContentType {
 

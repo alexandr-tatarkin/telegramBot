@@ -1,4 +1,4 @@
-package com.example.telega.boilerplate;
+package ru.telega;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeansException;

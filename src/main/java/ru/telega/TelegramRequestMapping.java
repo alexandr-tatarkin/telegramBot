@@ -1,4 +1,4 @@
-package com.example.telega.boilerplate;
+package ru.telega;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

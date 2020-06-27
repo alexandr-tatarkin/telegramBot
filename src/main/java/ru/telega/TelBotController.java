@@ -1,4 +1,4 @@
-package com.example.telega.boilerplate;
+package ru.telega;
 
 import org.springframework.stereotype.Component;
 

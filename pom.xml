@@ -9,8 +9,8 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>ru.telega</groupId>
-    <artifactId>telega</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <artifactId>spring-enhancement</artifactId>
+    <version>0.0.1</version>
     <name>telega</name>
     <description>Telega bot</description>
 

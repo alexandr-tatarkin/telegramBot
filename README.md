@@ -1,4 +1,4 @@
-#Prerequisites:
+### Prerequisites
  Following properties are mandatory:
 ```
 telega.bot-token=<bot token>
@@ -21,7 +21,7 @@ telega.chats=<alowed chats>
          </dependency>
 
 
-#Example: 
+### Example
 
 ```java
 @TelBotController

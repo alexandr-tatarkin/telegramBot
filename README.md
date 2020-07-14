@@ -4,7 +4,7 @@
 telega.bot-token=<bot token>
 telega.bot-name=<bot name>
 ```
- access to this bot could be restricted with the property:
+ access to your bot can be restricted with the property:
 ```
 telega.chats=<alowed chats>
 ```

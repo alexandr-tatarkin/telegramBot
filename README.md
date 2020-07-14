@@ -8,17 +8,31 @@ telega.bot-name=<bot name>
 ```
 telega.chats=<alowed chats>
 ```
- necessary dependency:
+ necessary dependency and repositories:
  
-         <dependency>
-             <groupId>org.springframework.boot</groupId>
-             <artifactId>spring-boot-starter</artifactId>
-         </dependency>
-         <dependency>
-             <groupId>org.telegram</groupId>
-             <artifactId>telegrambots</artifactId>
-             <version>4.9</version>
-         </dependency>
+    <repositories>
+       <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+       </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.github.alexandr-tatarkin</groupId>
+            <artifactId>telegramBot</artifactId>
+            <version>v0.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.telegram</groupId>
+            <artifactId>telegrambots</artifactId>
+            <version>4.9</version>
+        </dependency>
+    </dependencies>
 
 
 ### Example

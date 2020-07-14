@@ -20,14 +20,14 @@ public class TelBotUpdateHandlerBeanPostProcessor implements BeanPostProcessor {
         Class<?> beanClass = bean.getClass();
         if (beanClass.isAnnotationPresent(TelBotController.class)) {
             Arrays.stream(beanClass.getMethods())
-                    .filter(method -> method.isAnnotationPresent(TelegramRequestMapping.class))
+                    .filter(method -> method.isAnnotationPresent(TelBotRequestMapping.class))
                     .forEach((Method method) -> generateController(bean, method));
         }
         return bean;
     }
 
     private void generateController(Object bean, Method method) {
-        TelegramRequestMapping requestMapping = method.getAnnotation(TelegramRequestMapping.class);
+        TelBotRequestMapping requestMapping = method.getAnnotation(TelBotRequestMapping.class);
         for (ContentType contentType : requestMapping.content()) {
             if (contentType.equals(ContentType.COMMAND))
                 Arrays.stream(requestMapping.value())
@@ -37,4 +37,7 @@ public class TelBotUpdateHandlerBeanPostProcessor implements BeanPostProcessor {
         }
     }
 
+    public TelBotMethodContainer getContainer() {
+        return container;
+    }
 }

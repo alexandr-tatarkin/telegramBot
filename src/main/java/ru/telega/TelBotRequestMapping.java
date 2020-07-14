@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
 
 @Target({ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
-public @interface TelegramRequestMapping {
+public @interface TelBotRequestMapping {
 
     String[] value() default {};
     ContentType[] content() default {ContentType.COMMAND};

@@ -36,4 +36,8 @@ public class TelBotMethodContainer {
         else
             return controllerMap.get(key);
     }
+
+    public boolean hasController(String key) {
+        return controllerMap.containsKey(key);
+    }
 }
